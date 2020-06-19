@@ -21,4 +21,18 @@ Sitemap (20-30 minutes)
 Wireframe for homepage (30-45 minutes)
 Mockup for homepage (45 minutes - 1 hour)
 
+12 elements a homepage should have
+Headline
+Sub-headline
+Primary Calls-to-Action
+Supporting Image
+Benefits
+Social Proof
+Navigation
+Content Offer
+Calls-to-Action
+Features
+Resources
+Success Indicators
+
 ...with peer feedback provided after each step of the process
