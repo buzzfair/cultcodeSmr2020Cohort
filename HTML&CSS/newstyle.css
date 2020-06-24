@@ -1,0 +1,35 @@
+body {
+    background-color: cornflowerblue;
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+div {
+    width: 50%;
+    margin: 100px 50px;
+    padding-left: 200px;
+    background-color: greenyellow;
+    border: 4px dashed purple;
+    border-radius: 8px;
+}
+
+#header {
+    background-color: crimson;
+    color: orange;
+
+
+p {
+    background-image: url(http://placekitten.com/200/139);
+    background-repeat: no-repeat;
+    background-size: cover; /*stretches the image to fill the space*/
+    height: 150px;
+    width: 25%;
+    text-align: center;
+}
+
+.main {
+    border: 6px dashed green;
+    border-radius: 25px;
+}
