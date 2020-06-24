@@ -1,2 +1,3 @@
-# cultcodeSmr2020Cohort
-Cultivating Coders Web Dev Bootcamp Activities and Projects
+# cultcodeSmr2020Cohort<br>
+Cultivating Coders Hybrid WebDev Bootcamp<br> 
+Activities, Design Challenges, Exercises and Projects
