@@ -1,0 +1,62 @@
+html {
+    background-color: ivory;
+    margin-top: 2em;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: blue;
+
+}
+
+div.fig {
+    display: block;
+    margin: auto;
+    text-align: center;
+
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.75em;
+    letter-spacing: .25em;
+
+}
+
+
+hr {
+    width: 75%;
+    border-style: inset;
+
+}
+
+
+img {
+    size: 125%;
+}
+
+.link {
+    margin-left: 35%;
+}
+
+p {
+    font-family: monospace;
+    font-size: normal;
+    margin-right: 35%;
+
+}
