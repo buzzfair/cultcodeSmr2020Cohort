@@ -1,0 +1,32 @@
+1 plate // select the plate
+2 bento // select the bentos
+3 #fancy // select the fancy plate
+4 plate apple // selects all the apples "in" (on) plates
+5 #fancy pickle // selects the pickles "in" (on) fancy plates
+6 apple.small // .small also would have been accepted
+7 orange.small // selects the small oranges only
+8 bento orange.small // select the small oranges on the bentos
+9 plate,bento // select all the plates and bentos
+10 * // select all the things
+11 plate * // select every plate
+12 plate + apple // select every apple that's next to a plate
+13 bento ~ pickle // select the pickles beside the bento (General Sibling Selector: Select elements that follows another element
+14 plate > apple // select the apple directly on a plate
+15 orange:first-child // select the top orange (First Child Pseudo-selector)
+16 plate *:only-child // select the apple and the pickle on the plates (Only Childe Pseudo-selector)
+17 #fancy > apple, pickle:last-child // select the small apple and the pickle (Last Child Pseudo-selector)
+18 plate:nth-child(3) // select the 3rd plate (Nth Child Pseudo-selector(#) - counts from the front)
+19 bento:nth-last-child(3) // select the first bento (Nth Last Child Pseudo Selector(#) - counts from the back)
+20 apple:first-of-type // select the first apple (First of Type Pseudo Selector)
+21 plate:nth-of-type(even) // select all even plates (Nth of Type Pseudo Selector (parameter can be odd, even or a number to designate the numbered instance of the element)
+22 plate:nth-of-type(2n+3) // select every 2nd plate, starting from the 3rd (Nth of Type w/ Formula, starting the count at a specific instance and ending with (and including) the finishing instance)
+23 apple.small:only-of-type // select the apply on the middle plate (Only of Type selector)
+24 .small:last-of-type // select the last apple and orange (Last of Type Selector)
+25 bento:empty // select the empty bentos (Empty Selector selects elements that don't have children)
+26 apple:not(.small) // select the big apples (Negation selector - all elements that don't match the parameter given)
+27 [for] // select the items for someone (Attribute selector - elements that have a specific attribute)
+28 plate[for] // select the plates for someone (combine Attribute selector w/ a tag name)
+29 [for="Vitaly"] // select Vitaly's meal (Attribute Value Selector - elements that have a specific attribute value only)
+30 [for^="Sa"] // select items for names that start with 'Sa' (Attribute Starts With Selector - attribute values that start with specific characters)
+31 [for$="ato"] // select items for names that end with 'ato' (Attribute Ends With Selector)
+32 [for*="obb"] // select meals for names that contain 'obb' (Attribute Wildcard Selector - attribute value that contains specific characters anywhere)
