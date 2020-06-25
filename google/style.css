@@ -1,0 +1,249 @@
+html{
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-family: Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: smaller;
+    color: rgb(32, 32, 32);
+}
+
+/* header section */
+
+span {
+    text-decoration: none;
+    color: gray;
+}
+
+span:hover {
+  
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    margin-top: 15px;
+    margin-left: 0px;
+    list-style-type: none;
+}
+
+
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#navBar-right {
+    float: right;
+}
+
+
+/*
+#signIn {
+    padding: 5px;
+    color: white;
+    background-color: rgb(26, 115, 232);
+    border: 3px solid rgb(26, 115, 232);
+}
+*/
+#signIn > a {
+    padding: 5px;
+    color: white;
+    background-color: rgb(26, 115, 232);
+    border: 3px solid rgb(26, 115, 232);
+}
+
+#signIn > a:hover {
+    min-width: 100%;
+    padding: 5px;
+    color: white;
+    background-color: rgb(80, 140, 219);
+    border: 4px solid rgb(80, 140, 219);
+}
+
+/* body section */
+
+main {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 70px 180px;
+    grid-template-areas: 
+    " . logo ."
+    " . search ."
+    " . flexbox ."
+    " . tagline ."
+}
+
+#shield {
+    justify-self: start;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    clear: both;
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+
+#search {
+    grid-area: search;
+    background: url(\images\baseline_search_black_18dp.png) left no-repeat;
+    padding-left: 10px;
+    width: 120%;
+    height: 40px;
+    border-radius: 25px;
+    border: solid .5px #d4d4d4;
+    justify-self: center;
+
+}
+
+#search:hover {
+    border-style: inset 1px #d4d4d4;
+    box-shadow: 1px 1px 1px 2px #e4e3e3;
+}
+
+#flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+
+#ggl-search-btn {
+    margin-right: 15px;
+    width: 125px;
+    height: 40px;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: gray;
+    border-radius: 5px;
+    border: none;
+}
+
+#ggl-search-btn:hover {
+    background-image: linear-gradient(to bottom, white, whitesmoke);
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px 2px #e4e3e3;
+}
+
+#ggl-search-btn:active {
+    background-image: linear-gradient(to bottom, white, whitesmoke);
+    border: 1px solid blue;
+    box-shadow: 1px 1px 1px 2px #e4e3e3;
+}
+
+#lucky-btn {
+    width: 135px;
+    height: 40px;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: gray;
+    border-radius: 5px;
+    border: none;
+}
+
+#lucky-btn:hover {
+    background-image: linear-gradient(to bottom, white, whitesmoke);
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px 2px #e4e3e3;
+}
+
+#lucky-btn:active {
+    background-image: linear-gradient(to bottom, white, whitesmoke);
+    border: 1px solid blue;
+    box-shadow: 1px 1px 1px 2px #e4e3e3;
+}
+
+#tagline {
+    grid-area: tagline;
+    justify-self: center;
+    align-self: none;
+}
+
+/*footer section*/
+
+footer > a {
+    color: gray;
+}
+
+footer [href] {
+    color: gray;
+}
+
+footer {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.1em;
+    background-color: #f2f2f2;
+
+}
+
+#footer {
+    padding-top: 10px;
+}
+
+#advertising {
+    padding: 20px;
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+}
+
+#business {
+    padding: 20px;
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+
+#hsw {
+    padding: 20px;
+    grid-area: hsw;
+    justify-self: center;
+    align-self: center;
+}
+
+#footer-right {
+    float: right;
+
+}
+
+#privacy {
+    padding: 20px;
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#terms {
+    padding: 20px;
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#settings {
+    padding: 20px;
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+}
