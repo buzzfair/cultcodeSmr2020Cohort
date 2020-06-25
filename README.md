@@ -1,5 +1,8 @@
 # cultcodeSmr2020Cohort<br>
-Cultivating Coders Hybrid UX/UI WebDev Bootcamp<br> 
-Activities, Design Challenges, Exercises and Projects<br>
 <br>
-All design and coding challenge files can be accessed here: https://github.com/buzzfair/cultcodeSmr2020Cohort
+<h2>Cultivating Coders Hybrid UX/UI WebDev Bootcamp</h2><br>
+<h3>Activities, Design Challenges, Exercises and Projects</h3><br>
+<br>
+  <p>All design and coding challenge files can be accessed here:<br>
+    <a href="https://github.com/buzzfair/cultcodeSmr2020Cohort">https://github.com/buzzfair/cultcodeSmr2020Cohort</a>
+  </p>
