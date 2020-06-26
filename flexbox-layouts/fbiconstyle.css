@@ -1,0 +1,61 @@
+/* style reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* end -- style reset */
+
+body {
+    line-height: 1;
+    font-family: Helvetica, sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    text-align: center;
+    background-color: salmon;
+    color: crimson;
+}
+
+
+.material-icons.md-400 {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 400px;
+     !important padding: 40px;
+     !important line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.aligner-item {
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    width: fit-content;
+    align-self: center;
+    justify-self: center;
+    background-color: lightgray;
+    border: 6px solid cornflowerblue;
+}
+
+span {
+    display: block;
+}
