@@ -1,0 +1,198 @@
+/* .main-container {
+    display: flex;
+
+} */
+
+.phones {
+    background-color: #fff;
+    flex-basis: 454px;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: stretch;
+    align-self: center;
+    height: 618px;
+    width: fit-content;
+    margin: 0 -15px 0 -35px;
+    padding: 0;
+    position: relative;
+    vertical-align: baseline;
+    -webkit-box-align: stretch;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    color: #00376B;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    font-size: 12px;
+}
+
+img {
+    width: 10px;
+    height: 13px;
+}
+
+.copyright {
+    color: #8e8e8e;
+    padding-left: 3px;
+}
+
+.d1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.d2 {
+    padding-left: 60px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+
+* {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 100px;
+
+    background-color: #ffffff;
+}
+
+.logo {
+    width: 200px;
+    background-color: white;
+
+    width: 35;
+    margin: 10px;
+    padding: 0px;
+    padding-bottom: 0px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 2px solid lightgrey;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-left: 700px;
+    margin-right: 300px;
+}
+
+.fb {
+    width: 20px;
+}
+
+.btn {
+    width: 250px;
+    height: 29px;
+    background-color: rgb(28, 164, 228);
+    border-radius: 5px;
+    border: none;
+    opacity: 35%;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.or {
+
+    font-size: 14px;
+    color: #999;
+    background-color: white;
+    font-weight: 600;
+    position: relative;
+    ;
+    margin-bottom: 20px;
+}
+
+.or::before {
+    content: '';
+    color: grey;
+    display: block;
+    height: 2px;
+    width: 15px;
+    position: relative;
+    top: 11px;
+    ;
+}
+
+.or::after {
+    content: '';
+    color: #999;
+    display: block;
+    height: 2px;
+    width: 15px;
+    position: relative;
+    top: 11px;
+}
+
+.img {
+    background-color: white;
+}
+
+.group {
+    margin-bottom: 8px;
+
+}
+
+.login {
+    color: rgb(35, 35, 150);
+}
+
+.tex {
+    background-color: lightgrey;
+}
+
+.forgot {
+    color: rgb(8, 8, 68);
+}
+
+a {
+    text-decoration: none;
+}
+
+#account-setup {
+    border: 1px solid grey;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    margin-left: 52%;
+    margin-right: 25%;
+    margin-top: 0%;
+    padding: 7px;
+    text-align: center;
+}
+
+#app-line {
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    margin-left: 52%;
+    margin-right: 25%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pictures {
+    display: inline-flex;
+    margin-left: 53%;
+    margin-top: 5px;
+}
+
+#app-pic-2 {
+    margin-left: 8px;
+}
