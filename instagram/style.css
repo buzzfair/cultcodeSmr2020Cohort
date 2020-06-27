@@ -1,18 +1,30 @@
-/* .main-container {
-    display: flex;
+* {
+    /* background-color: whitesmoke; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-} */
+}
+
+body {
+    background-color: white;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+}
 
 .phones {
     background-color: #fff;
     flex-basis: 454px;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-shrink: 0;
     align-items: stretch;
     align-self: center;
     height: 618px;
     width: fit-content;
-    margin: 0 -15px 0 -35px;
+    margin: -20px -15px 0 325px;
     padding: 0;
     position: relative;
     vertical-align: baseline;
@@ -21,59 +33,14 @@
     -webkit-box-orient: vertical;
 }
 
-ul {
-    display: flex;
-    list-style-type: none;
-    color: #00376B;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 40px;
-    font-size: 12px;
-}
-
-img {
-    width: 10px;
-    height: 13px;
-}
-
-.copyright {
-    color: #8e8e8e;
-    padding-left: 3px;
-}
-
-.d1 {
-    padding-left: 5px;
-    padding-right: 5px;
-    font-weight: bold;
-}
-
-.d2 {
-    padding-left: 60px;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-}
-
-
-* {
-    background-color: whitesmoke;
-    margin: 0;
-    padding: 0;
-}
-
 .container {
-    margin-top: 100px;
-
+    margin-top: 65px;
     background-color: #ffffff;
 }
 
 .logo {
     width: 200px;
     background-color: white;
-
     width: 35;
     margin: 10px;
     padding: 0px;
@@ -81,21 +48,22 @@ footer {
 }
 
 .right-column {
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #fff;
-    border: 2px solid lightgrey;
-    margin: 10px;
-    padding: 10px;
+    border: 1px solid lightgrey;
+    padding: 30px;
     padding-bottom: 50px;
-    margin-left: 700px;
-    margin-right: 300px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
-.fb {
-    width: 20px;
+.group {
+    margin-bottom: 8px;
+
 }
 
 .btn {
@@ -111,13 +79,11 @@ footer {
 }
 
 .or {
-
     font-size: 14px;
     color: #999;
     background-color: white;
     font-weight: 600;
     position: relative;
-    ;
     margin-bottom: 20px;
 }
 
@@ -129,7 +95,6 @@ footer {
     width: 15px;
     position: relative;
     top: 11px;
-    ;
 }
 
 .or::after {
@@ -142,22 +107,21 @@ footer {
     top: 11px;
 }
 
-.img {
-    background-color: white;
-}
-
-.group {
-    margin-bottom: 8px;
-
+.fb {
+    width: 20px;
 }
 
 .login {
     color: rgb(35, 35, 150);
 }
 
-.tex {
+/* .img {
+    background-color: white;
+} */
+
+/* .tex {
     background-color: lightgrey;
-}
+} */
 
 .forgot {
     color: rgb(8, 8, 68);
@@ -167,32 +131,74 @@ a {
     text-decoration: none;
 }
 
+.lower-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #account-setup {
-    border: 1px solid grey;
+    /* display: flex; */
+    border: 1px solid lightgrey;
     font-size: 15px;
     font-family: 'Segoe UI';
-    margin-left: 52%;
-    margin-right: 25%;
-    margin-top: 0%;
+    margin-top: 10px;
+    margin-left: 10px;
     padding: 7px;
     text-align: center;
+    width: 250px;
+    padding: 30px;
 }
 
 #app-line {
     font-size: 15px;
     font-family: 'Segoe UI';
-    margin-left: 52%;
-    margin-right: 25%;
+    /* margin-left: 52%;
+    margin-right: 25%; */
     margin-top: 15px;
     text-align: center;
+    width: 250px;
 }
 
 .pictures {
-    display: inline-flex;
-    margin-left: 53%;
+    display: flex;
     margin-top: 5px;
 }
 
 #app-pic-2 {
     margin-left: 8px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    color: #00376B;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    font-size: 12px;
+}
+
+.copyright {
+    color: #8e8e8e;
+    padding-left: 3px;
+}
+
+.d1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.d2 {
+    width: 10px;
+    height: 13px;
+    padding-left: 60px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
