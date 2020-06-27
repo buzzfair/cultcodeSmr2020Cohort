@@ -1,0 +1,28 @@
+GOOGLE FEEDBACK
+------------------------
+
+- Overall, it looks great! There are a couple discrepancies I've noticed, but don't let this feedback take away from what is a strong recreation of the site.
+- The icons in the top right are a little off-center. Since you used floats, you could have used:
+
+position: relative;
+top: 5px;
+and adjust the value for the top property as needed.
+
+The helper text ("Easily set an expiration date for your data. Turn on Auto-delete") was on two lines instead of one. 
+I can't recall if this mimics the original Google site since they've changed it, 
+but if you did want to put it on one line you could have added flexbox to the container:
+
+#tagline {
+    grid-area: tagline;
+
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+and reduce the width of the relevant row in the grid declaration to match.
+
+- Try to get into the habit of styling by class rather than ID. 
+This is more a "best practice" tip than anything really being wrong. 
+In general we want to use IDs when attaching functionality and classes for styling.
