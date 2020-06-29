@@ -1,0 +1,54 @@
+/* style reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: flex;
+}
+
+/* end -- style reset */
+
+body {
+    display: flex;
+    background-color: navy;
+}
+
+#container {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    width: 100vw;
+    align-content: center;
+  }
+
+  .sidebar {
+    display: flex;
+    height: 100vh;
+    flex-basis: 100%;
+    width: 25vw;
+    flex-grow: 1;
+    background-color: papayawhip;
+    border: solid 2px coral;
+  }
+
+  .item {
+    display: flex;
+    width: 15vw;
+    height: 40vh;
+    flex-grow: 0;
+    background-color: papayawhip;
+    border: solid 2px coral;
+    margin: 0 0 25px 0;
+  }
+
+
+.break-column {
+    flex-basis: 100%;
+    height: 100%;
+    width: 0;
+    padding-left:  10vw;
+  }
