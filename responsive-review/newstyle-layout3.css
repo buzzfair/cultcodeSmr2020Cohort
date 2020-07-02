@@ -1,0 +1,51 @@
+/* style reset
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* end -- style reset */
+
+body {
+    height: 100vh;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: floralwhite;
+    text-align: center;
+}
+
+.container {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    /* height: 200px; */
+    padding: 10px;
+}
+
+.left-group {
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.right-group {
+    display: flex;
+    align-self: flex-end;
+}
+
+.div1, .div2, .div3 {
+    margin: 0 5px;
+}
+
+.myDiv {
+    background-color: crimson;
+    height: 50px;
+    width: 50px;
+
+}
+

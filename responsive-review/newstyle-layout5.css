@@ -1,0 +1,44 @@
+/* style reset
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* end -- style reset */
+
+body {
+    height: 100vh;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: floralwhite;
+    text-align: center;
+}
+
+.container {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+}
+
+/* .left-group {
+    display: flex;
+} */
+
+.div4 {
+    display: none;
+}
+
+
+.myDiv {
+    background-color: crimson;
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}

@@ -1,0 +1,47 @@
+/* style reset
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* end -- style reset */
+
+body {
+    height: 100vh;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: floralwhite;
+    text-align: center;
+}
+
+.container {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    /* height: 200px; */
+    padding: 10px;
+}
+
+.myDiv {
+    background-color: crimson;
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.div1,
+.div2 {
+    margin: 10px;
+}
+
+.div3,
+.div4 {
+    display: none;
+}

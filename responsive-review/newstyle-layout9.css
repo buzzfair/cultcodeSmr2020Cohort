@@ -1,0 +1,58 @@
+/* style reset
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* end -- style reset */
+
+body {
+    height: 100vh;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: floralwhite;
+    text-align: center;
+}
+
+.container {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    padding: 10px 0;
+}
+
+.div1 {
+    flex-grow: 2;
+    height: 50px;
+}
+
+.div2 {
+    flex-grow: 1;
+    height: 50px;
+}
+
+.div3 {
+    flex-grow: 1;
+    align-self: stretch;
+    order: -1;
+    /* height: 100%; */
+}
+
+.div4 {
+    display: none;
+}
+
+.myDiv {
+    background-color: crimson;
+}
+
+.myDiv:nth-child(2n+1){
+    margin: 0 10px;
+}
