@@ -53,6 +53,7 @@ li:hover {
 
 .menu-text {
     color: green;
+    text-decoration: none;
 }
 
 img.sm-icon {
@@ -177,8 +178,7 @@ p.footer {
 
 }
 
-
-@media only screen and (min-width: 0px) and (max-width: 758px) {
+@media only screen and (max-width: 758px) {
 
     .header-image {
         display: none;
@@ -188,6 +188,10 @@ p.footer {
         display: flex;
         flex-direction: column;
         width: 100vw;
+    }
+
+    .right-container {
+        font-size: inherit;
     }
 
     .navbar {
@@ -240,11 +244,22 @@ p.footer {
         width: 100vw;
         max-width: 100%;
         min-width: 100%;
+        text-align: center;
+    }
+
+    .post-title {
+        font-size: 1.5em;
+    }
+
+    .post-copy {
+        font-size: 1.25em;
+        text-align: left;
     }
 
     .post-img {
-        max-width: 250px;
+        max-width: 150px;
         height: auto;
     }
+
 
 }
