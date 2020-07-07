@@ -124,3 +124,36 @@ function pTagGreeting (userName,numOfDaysLoggedOut) {
     console.log(`<p>Hello, ${userName}. It\'s been ${numOfDaysLoggedOut} since we last saw you. Welcome back!</p>`);
 };
 pTagGreeting("God36",7); // output <p>Hello, God36. It's been 7 since we last saw you. Welcome back!</p>
+
+
+// Write a method that returns true if an input string 
+// contains an empty space (" "), false if it does not.
+
+function containsSpaces (string) {
+    if (string.indexOf(' ') >= 0) {
+    console.log("true");
+    } else {
+        console.log("false");
+    }
+}
+containsSpaces("I like potatoes."); // output true
+containsSpaces("Supercalifragilisticexpialidocious"); // output false
+
+
+// Take in a number, return the absolute value of that number without using Math.abs()
+
+function absNum (num) {
+    if (num >= 0) {
+        return Math.ceil(num);
+    } else if (num < 0) {
+        return Math.floor(num) * -1;
+    } else {
+        return num;
+    };
+}
+ console.log(absNum(10)); // output 10
+ console.log(absNum(1.78)); // output 2
+ console.log(absNum(-3.5)); // output 4
+ console.log(absNum(393)); // output 393
+
+
