@@ -60,7 +60,7 @@ function add(num1, num2) {
 //   concatenation to return the string “Hello, <name>!”
 
 function helloName(nameString) {
-    console.log(`Hello, ${nameString}!`);
+    console.log("Hello, " + `${nameString}!`);
 };
 helloName("Guin"); // output Hello, Guin!
 helloName("Joe Ed"); // output Hello, Joe Ed!
