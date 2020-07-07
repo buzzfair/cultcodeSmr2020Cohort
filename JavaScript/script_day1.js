@@ -9,7 +9,7 @@ let b; // let y = 'World'
 function sayingHi(x,y) {
   return x + " " + y;
 }
-console.log(sayingHi(a,b)); // change a,b to x,y
+console.log(sayingHi(a,b)); // current output undefined, undefined >>>> change a,b to x,y
 
 
 let x = 'Hello'
