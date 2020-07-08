@@ -244,13 +244,12 @@ function countRangeV2(lowVal,highVal) {
     while (lowVal <= highVal) {
         lowVal++;
     if (lowVal & 1) {
-        console.log("odd");
-    } else {
         console.log("even");
+    } else {
+        console.log("odd");
     } 
     } 
 };
-countRangeV2(15,45); // undefined 
-// I've rearranged this code every which way and realize: ((I'M STUCK!!!!!!!!!!!!!))
+countRangeV2(15,45); // expected result! at last!
 
 
