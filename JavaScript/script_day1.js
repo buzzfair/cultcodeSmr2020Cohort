@@ -44,11 +44,13 @@ function add(num1, num2) {
   // number is greater than 0 and false if it is not.
 
   function greaterThanZero(num) {
-      if (num > 0) {
-          return true;
-      } else {
-          return false;
-      }
+    //   if (num > 0) {
+    //       return true;
+    //   } else {
+    //       return false;
+    //   }
+    const compare = num > 0;
+    return compare;
   }
   console.log(greaterThanZero(5)); // output true
   console.log(greaterThanZero(0)); // output false
@@ -157,3 +159,59 @@ function absNum (num) {
  console.log(absNum(393)); // output 393
 
 
+ // Write a function that takes in a number 
+ // and returns true if it is even, false if it is odd
+
+function trueFalse(num) {
+    if (num & 1) {
+        return false;
+    } else {
+        return true;
+    }
+}
+ console.log(trueFalse(19)); // 
+ console.log(trueFalse(202)); // 
+
+
+// ***** ADVANCED *****
+
+// function that takes two strings, one of any length, the other a single character
+// then replace any instance of repeated single character with the character "*"
+// and return the modified original string, i.e., 
+//  (“Apple”, “p”) -> “Ap*le”
+//  (“banana”, “n”) -> “bana*a”
+//  (“banana”, “a”) -> “ban*n*”
+
+function charReplace (string, char) {
+    let string = string.replace(/char{2,}/gi, "*");
+    return string;
+};
+console.log(charReplace(banana,a));
+console.log(charReplace(banana,n));
+console.log(charReplace(Apple,p));
+
+
+// takes in a string, replaces any repeated characters with "*",
+// returns results as demonstrated
+// “Apple” -> “Ap*le”
+// “Crabcake” -> “Crabc*ke”
+// “Banana” -> “Ban***”
+
+function charReplaceV2 (string) {
+    
+   
+   };
+   
+
+// takes in a string, determines if string is a palindrome
+
+function isPalindrome (string) {
+
+};
+
+
+//given number N, returns the Nth number of the Fibonacci sequence 0, 1, 1, 2, 3, 5, 8 ...
+
+function nthFibonacci(N) {
+
+};
