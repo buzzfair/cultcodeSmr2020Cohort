@@ -192,7 +192,9 @@ document.write("We reached " + counter + ". Loop Stopped. <br />");
 // 8. Write a function that takes in a string and a number N and uses a loop 
 // 8. to log the string out to the console N times.
 
-// 1: while loop that logs the numbers 2-20 out to the document
+
+
+// 1 while loop that logs the numbers 2-20 out to the document
 
 var xray = 2; // initiator
 document.write(`Starting Loop at ${xray} <br />`);
@@ -204,7 +206,7 @@ while (xray <= topCount) { // iteration condition
 document.write("We have reached " + topCount + "! Loop stopped! <br />")
 
 
-// 2: do/while loop that logs the numbers 2-20 out to the console
+// 2 do/while loop that logs the numbers 2-20 out to the console
 
 var counter = 0; 
 console.log("Starting Loop");
@@ -216,7 +218,7 @@ while (counter < 20);
 console.log("We reached " + counter + ". Loop Stopped.");
 
 
-// 3: while loop that logs the numbers 20 - 2 in descending order out to the document
+// 3 while loop that logs the numbers 20 - 2 in descending order out to the document
 var countdown = 20; // initiator
 document.write("Starting Loop at " + countdown + "<br />")
 var minCounter = 2; // stopping condition
@@ -227,7 +229,7 @@ while (countdown <= minCounter) { // iteration condition
 document.write("We have reached " + minCounter + "! Loop stopped! <br />")
 
 
-// 4: function w/ range of number (start w/ min & max numbers), use while loop to iterate through numbers and print to the console
+// 4 function w/ range of number (start w/ min & max numbers), use while loop to iterate through numbers and print to the console
 
 function countRange(lowNum,highNum) {
     while (lowNum <= highNum) {
@@ -238,18 +240,58 @@ function countRange(lowNum,highNum) {
 countRange(15,45);
 
 
-// 5: same as above but print even or odd instead of printing the numbers to the console
+// 5 same as above but print even or odd instead of printing the numbers to the console
 
 function countRangeV2(lowVal,highVal) {
     while (lowVal <= highVal) {
         lowVal++;
-    if (lowVal & 1) {
+    if (lowVal % 2 ===) {
         console.log("even");
     } else {
         console.log("odd");
     } 
     } 
 };
-countRangeV2(15,45); // expected result! at last!
+countRangeV2(15,45); // output odd even odd even odd even etc.
 
 
+// 6 function takes in a number, loops through all values 0 to number, & logs each out to the console, 
+// then STOPs when value that you're about to log is GREATER THAN OR EQUAL TO the value of N/2
+
+function valueLoop(nmbr) {
+    let stopLoop = (nmbr / 2);
+    nmbr = 0;
+    while (nmbr <= stopLoop) {
+        console.log(nmbr);
+        nmbr++;
+    }
+};
+valueLoop(9); // output 0 1 2 3 4
+
+
+// 7 function that loops through a string and outputs the individual letters using indexing
+// and a while loop
+
+function stringLoop (str) {
+    let letter = 0;
+    while (letter < str.length) {
+        console.log(str.charAt(letter));
+        letter++;
+    }
+};
+
+stringLoop("apple"); // output  a  p  p  l  e
+stringLoop("JavaScript is fun!"); // output  J  a  v  a  S  c  r  i  p  t   i  s   f  u  n  !
+
+
+// 8 function that takes a string and a number and outputs the string the designated number of times
+
+function stringRepeater(str,n) {
+    let y = 0;
+    while (y < n) {
+        y++;
+        console.log(str);        
+    }
+};
+
+stringRepeater("Hello, Everyone! What an awesome day.",10); // output Hello, Everyone! What an awesome day. (x10)
