@@ -353,39 +353,108 @@ console.log(newArr[5]); // output mem
 
 
 // ***** Maps Coding Challenges *****
-Write a map object to store the following information:
-Our family needs to keep track of our pets. We have 2 dogs, 1 hamster, 3 cats, and 1 fish.
-Given the following code:
+// 1: Write a map object to store the following information:
+// Our family needs to keep track of our pets. We have 2 dogs, 1 hamster, 3 cats, and 1 fish.
+
+const petMap = new Map([
+    [1, '1 hamster'],
+    [2, '1 fish'],
+    [3, '2 dogs'],
+    [4, '3 cats']
+]);
+console.log(petMap); // output Map(4) {1 => "1 hamster", 2 => "1 fish", 3 => "2 dogs", 4 => "3 cats"}
+
+// 2: Given the following code:
+// Write code to obtain the value stored at the key ‘pizza’. What is it? 
+
 let myMap = new Map();
 myMap.set('pizza', 'delicious');
 myMap.set('broccoli', 'important');
 myMap.set('pizza', 'unhealthy');
+console.log(myMap); // output Map(2) {"pizza" => "unhealthy", "broccoli" => "important"}
+console.log(myMap.get('pizza')); // output unhealthy
 
-Write code to obtain the value stored at the key ‘pizza’. What is it? 
-Write a function that takes in a Map as input. Using a loop, it then cycles through each key in the map and prints out the values corresponding to that key.
-Write a function that takes in two arrays as input, keys and values. The input arrays are of equal length, and each entry in them corresponds to a single key and value pair. Return a map containing all of the information in the original arrays.
-E.g. arraysToMap([‘chicken’,’dog’], [3,’fish’]) ->
-Map { ‘chicken’ => 3, ‘dog’ => 'fish’ }
+// 3: Write a function that takes in a Map as input. Using a loop, 
+// it then cycles through each key in the map and prints out the values corresponding to that key
+
+function mapValues(map) {
+    for(i=0;i<map.values.length;i++) {
+        console.log(map.values);
+    }
+};
+console.log(petMap); // output {1 => "1 hamster", 2 => "1 fish", 3 => "2 dogs", 4 => "3 cats"}
+
+// 4: Write a function that takes in two arrays as input, keys and values. 
+// The input arrays are of equal length, and each entry in them corresponds 
+// to a single key and value pair. Return a map containing all of the information 
+// in the original arrays.
+// E.g. arraysToMap([‘chicken’,’dog’], [3,’fish’]) ->
+// Map { ‘chicken’ => 3, ‘dog’ => 'fish’ }
+
+array1 = [101,102,103,104];
+array2 = ['programming-foundations','html','css','javascript'];
+function arrToMap(keysArr,valuesArr) {
+    valuesArr.reduce(function(acc, currVal, index) {
+        acc[keysArr[index]] = currVal;
+        console.log(acc)
+      }, {})
+};
+arrToMap(array1,array2); // not working; 
 
 
-Let’s make a basic password system in two parts.
-That is, it takes in two strings as input: one representing a username and one representing a password. The function stores the username and password combination in a global object as plain text. There is no output.
-Write a function to act as a password reminder. That is, it takes in a string as input representing a username. If the username already has a password stored, the function returns the password. If the username hasn’t been stored, the function returns false and logs a message to the console letting them know about the issue.
-Write a function that takes in two maps and merges them, returning a single map representing the combination of the two. That is, it does the following:
-If a key in the first map does not exist in the second map (or vice versa), add the key and value to the map.
-If a key exists in BOTH maps, the new value for the key should be an array containing BOTH values from the two maps.
-E.g. 
-var first = new Map([[1, 'apple'],[2, 'banana'],[3, 'cherry']])
-var second = new Map([[3, 'watermelon'],[4, 'pear'] ])
-var combined = mapCombiner(first, second);
-console.log(combined);
-/* 
-Map { 1 => 'apple', 2 => 'banana', 3 => ['cherry','watermelon'], 4 => 'pear' }
-*/
-A kidnapper wrote a ransom note, but now he is worried it will be traced back to him through his handwriting. He found a magazine and wants to know if he can cut out whole words from it and use them to create an untraceable replica of his ransom note. The words in his note are case-sensitive and he must use only whole words available in the magazine. He cannot use substrings or concatenation to create the words he needs. 
+// 5: Let’s make a basic password system in two parts.
+// 5a: That is, it takes in two strings as input: one representing 
+// a username and one representing a password. The function stores 
+// the username and password combination in a global object as plain text. 
+// There is no output.
+// 5b: Write a function to act as a password reminder. That is, it takes in 
+// a string as input representing a username. If the username already 
+// has a password stored, the function returns the password. If the username 
+// hasn’t been stored, the function returns false and logs a message to the 
+// console letting them know about the issue.
 
-Given the words in the magazine and the words in the ransom note, print Yes if he can replicate his ransom note exactly using whole words from the magazine; otherwise, print No.
-For example, the note is "Attack at dawn". The magazine contains only "attack at dawn". The magazine has all the right words, but there's a case mismatch. The answer is “No”. The inputs are a list of strings representing the magazine and a list of strings representing the note.
-Given two strings, determine if they share a common substring. A substring may be as small as one character.
-For example, the words "a", "and", "art" share the common substring “a”. The words "be" and "cat" do not share a substring. 
-Hint: consider a sequence of nested maps
+
+
+// 6: Write a function that takes in two maps and merges them, 
+// returning a single map representing the combination of the two. 
+// That is, it does the following:
+// 6a: If a key in the first map does not exist in the second map 
+// (or vice versa), add the key and value to the map.
+// 6b: If a key exists in BOTH maps, the new value for the key should be 
+// an array containing BOTH values from the two maps.
+// E.g. 
+// var first = new Map([[1, 'apple'],[2, 'banana'],[3, 'cherry']])
+// var second = new Map([[3, 'watermelon'],[4, 'pear'] ])
+// var combined = mapCombiner(first, second);
+// console.log(combined);
+// /* 
+// Map { 1 => 'apple', 2 => 'banana', 3 => ['cherry','watermelon'], 4 => 'pear' }
+// */
+
+
+
+
+// 7: A kidnapper wrote a ransom note, but now he is worried it will be traced 
+// back to him through his handwriting. He found a magazine and wants to know 
+// if he can cut out whole words from it and use them to create an untraceable 
+// replica of his ransom note. The words in his note are case-sensitive and he 
+// must use only whole words available in the magazine. 
+// He cannot use substrings or concatenation to create the words he needs. 
+
+// Given the words in the magazine and the words in the ransom note, 
+// print Yes if he can replicate his ransom note exactly using whole words 
+// from the magazine; otherwise, print No.
+// For example, the note is "Attack at dawn". 
+// The magazine contains only "attack at dawn". 
+// The magazine has all the right words, but there's 
+// a case mismatch. The answer is “No”. 
+// The inputs are a list of strings representing the magazine 
+// and a list of strings representing the note.
+
+
+
+// 8: Given two strings, determine if they share a common substring. 
+// A substring may be as small as one character.
+// For example, the words "a", "and", "art" share the common substring “a”. 
+// The words "be" and "cat" do not share a substring. 
+// Hint: consider a sequence of nested maps
