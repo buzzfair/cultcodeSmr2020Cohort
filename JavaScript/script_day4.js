@@ -378,11 +378,13 @@ console.log(myMap.get('pizza')); // output unhealthy
 // it then cycles through each key in the map and prints out the values corresponding to that key
 
 function mapValues(map) {
-    for(i=0;i<map.values.length;i++) {
-        console.log(map.values);
+    let mapIter = map.keys();
+    for(i=0;i<map.size;i++) {
+        let value = map.get(mapIter.next().values)
+        console.log(value);
     }
 };
-console.log(petMap); // output {1 => "1 hamster", 2 => "1 fish", 3 => "2 dogs", 4 => "3 cats"}
+console.log(petMap); // output 
 
 // 4: Write a function that takes in two arrays as input, keys and values. 
 // The input arrays are of equal length, and each entry in them corresponds 
@@ -394,26 +396,51 @@ console.log(petMap); // output {1 => "1 hamster", 2 => "1 fish", 3 => "2 dogs", 
 array1 = [101,102,103,104];
 array2 = ['programming-foundations','html','css','javascript'];
 function arrToMap(keysArr,valuesArr) {
-    valuesArr.reduce(function(acc, currVal, index) {
-        acc[keysArr[index]] = currVal;
-        console.log(acc)
-      }, {})
+    // since we're returning to a map, we need to create a map
+    let result = new Map();
+    for(let i=0;i<keysArr.length;i++){
+        // get a key from one array & a value from the other
+        let key = keysArr[i];
+        let value = valuesArr[i]
+        //add a key-value pair to map
+        result.set(key,value)
+    }
+    return result;
 };
-arrToMap(array1,array2); // not working; 
+arrToMap(array1,array2); // output
 
 
 // 5: Let’s make a basic password system in two parts.
 // 5a: That is, it takes in two strings as input: one representing 
 // a username and one representing a password. The function stores 
-// the username and password combination in a global object as plain text. 
-// There is no output.
+// the username and password combination in a map and return the new map
 // 5b: Write a function to act as a password reminder. That is, it takes in 
-// a string as input representing a username. If the username already 
+// a string as input representing a username and a map to store. 
+// If the username already 
 // has a password stored, the function returns the password. If the username 
 // hasn’t been stored, the function returns false and logs a message to the 
 // console letting them know about the issue.
 
+function passwordStorer(username,password) {
+    let thatMap = new Map(); // create the map
+    thatMap.set(username,password) // "set" or push the keys and values into the map
+    return thatMap; // return the new map
+}
 
+function passwordReminder(username,map) {
+    if(map.has(username)){
+        let password = map.get(username); // .get() method used with a key returns the assigned value
+        return password;
+    } else {
+        console.log("Error: no password");
+        return false;
+        
+    }
+};
+
+let database = passwordStorer('gwhite123','gooberberries'); 
+passwordReminder('gwhite123', database);
+passwordReminder('gwhite123', database); // output "gooberberries"
 
 // 6: Write a function that takes in two maps and merges them, 
 // returning a single map representing the combination of the two. 
@@ -423,15 +450,27 @@ arrToMap(array1,array2); // not working;
 // 6b: If a key exists in BOTH maps, the new value for the key should be 
 // an array containing BOTH values from the two maps.
 // E.g. 
-// var first = new Map([[1, 'apple'],[2, 'banana'],[3, 'cherry']])
-// var second = new Map([[3, 'watermelon'],[4, 'pear'] ])
-// var combined = mapCombiner(first, second);
-// console.log(combined);
 // /* 
 // Map { 1 => 'apple', 2 => 'banana', 3 => ['cherry','watermelon'], 4 => 'pear' }
 // */
 
+var first = new Map([[1, 'apple'],[2, 'banana'],[3, 'cherry']])
+var second = new Map([[3, 'watermelon'],[4, 'pear'] ])
+// var combined = mapCombiner(first, second);
 
+function mergeMap(map1,map2) {
+    let combined = new Map();
+    for (const k of map1.keys()) {
+        if (map1.get(key) !== map2.get(key) {        //if a key in one map doesn't exist in the other
+        combined.set(map1.keys(),map1.values());     //add that key and its corresponding value to a new (merged) map
+        } else { 
+            let newArray = Array.from(map.values()); //if a key DOES exist in both maps, return an array , as a new value for the key,
+            combined.set(newArray.values());         // that consists of the corresponding values from the (2) original maps
+        }
+    }
+console.log(combined);
+}
+mergeMap(first,second);
 
 
 // 7: A kidnapper wrote a ransom note, but now he is worried it will be traced 
@@ -451,6 +490,24 @@ arrToMap(array1,array2); // not working;
 // The inputs are a list of strings representing the magazine 
 // and a list of strings representing the note.
 
+let magazineWords = [put the money in the box, Attack at dawn, no police];
+let noteWords = [Put the money in the box, attack at dawn, No police];
+function ransomNote(magazineWords,noteWords) {
+    if(magazineWords.length!=noteWords.length) {
+    return "No";                                    //if not return no 
+    } else { 
+    for(var i=0;i<magazineWords.length;i++)    // comparing each element of array 
+    if(magazineWords[i]!=noteWords[i]) {
+     return "No";
+     } else {               //if not return no 
+     return "Yes";     //if everything matches (both the words and the case) return yes 
+   } 
+ } 
+};
+console.log(ransomNote;)
+
+// could also try?  array1.length === array2.length && 
+//                  array1.every(function(value, index) { return value === array2[index]})
 
 
 // 8: Given two strings, determine if they share a common substring. 
@@ -458,3 +515,11 @@ arrToMap(array1,array2); // not working;
 // For example, the words "a", "and", "art" share the common substring “a”. 
 // The words "be" and "cat" do not share a substring. 
 // Hint: consider a sequence of nested maps
+
+function commonSubstring(string1,string2) {
+    //compare the 2 strings
+    //return true if they have a substring in common
+    //return false if otherwise
+}
+
+console.log(commonSubstring("cat","apple")); //desired output: true;
