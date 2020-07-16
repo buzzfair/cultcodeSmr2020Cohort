@@ -237,15 +237,35 @@ for (let [key, value] of Object.entries(programming)) {
 // 12: To-Do list maker
 // 12a: Write a function that takes in two strings and returns 
 //      a custom object called ‘Item’ containing the fields ‘task’ and ‘deadline’
-//      e.g. Item(‘get groceries’, ‘‘March 10, 2020”) -> {task: ‘get groceries’, deadline: ‘March 10, 2020’)
+//      e.g. Item(‘get groceries’, ‘‘March 10, 2020”) 
+//      -> {task: ‘get groceries’, deadline: ‘March 10, 2020’)
 
-function taskDeadline (task,deadline) {
+// 12a:
+function Item (task,deadline) {
     this.task = task;
     this.deadline = deadline;
 }
-let item = taskDeadline("get groceries", "July 16,2020")
-console.log(taskDeadline);
+let groceries = new Item("get groceries", "July 16,2020");
+let bike = new Item("fix bicycle","ASAP") 
+console.log(groceries,bike);
 
-// this isn't printing the object in the way the instructions are asking for
-// this is only printing the object constructor
-// try this one again using a factory function maybe?
+// 12b:
+let toDo = [groceries,bike];
+console.log(toDo);
+
+function toDoHTML(array) {
+    let list = document.createElement("ul")
+    for (let i=0;i<array.length;i++) {
+        let listItem = document.createElement("li");
+        listItem.innerHTML = `${arr[i].task}: ${arr[i].deadline} `;
+        list.appendChild(listItem)
+    }
+    return list;
+}
+
+let list = toDoHTML(toDo)
+
+// 12c:
+document.getElementsByTagName("body").appendChild(list)
+
+

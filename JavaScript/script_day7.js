@@ -70,9 +70,9 @@ Please COMMENT your code (more > less) and add a comment before each snippet of 
 8. Using a loop, add five new p tags to the body of the document. Each p tag should have different innerText based on its index e.g. "This is p tag 1, "This is p tag 2", ... , "This is p tag 5". 
 
 BONUS: give each p tag a different background color, too!
+
 */
 
-//https://codepen.io/buzzfair/pen/abdaLgo?editors=0010
 // 0. 
 let body = document.querySelector("body")
 console.log(body);
@@ -121,18 +121,20 @@ body.appendChild(myHeader);
 console.log(body);
 // Because the h1 element was removed and stored in memory, I can still get to it, and in this case append it to the body! Neat.
 
-// 8. 
+// 8. + BONUS
 // function createParagraph() 
-for (let i=1; i < 6; i++) { 
+const colors = ["red","blue","green","yellow","purple"]; 
+for (let i=0; i < 5; i++) { 
   let newPara = document.createElement("p");
-  newPara.innerHTML = `This is paragraph ${i}`;
+  newPara.innerHTML = `This is p tag ${i}`;
   document.body.appendChild(newPara);
+  newPara.style.backgroundColor = colors[i];
 }
 console.log(body)
 
 // BONUS: 
-const colors = ["red","blue","green","yellow","purple"]; 
-const paragraphs = document.getElementsByTagName("p");
-for(let j = 0; j < paragraphs.length; j++) {
-    paragraphs[j].style.backgroundColor = colors[j];
-}
+// const colors = ["red","blue","green","yellow","purple"]; 
+// const paragraphs = document.getElementsByTagName("p");
+// for(let j = 0; j < paragraphs.length; j++) {
+//     paragraphs[j].style.backgroundColor = colors[j];
+// }
