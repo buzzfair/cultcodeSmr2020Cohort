@@ -246,10 +246,15 @@ function Item (task,deadline) {
     this.deadline = deadline;
 }
 let groceries = new Item("get groceries", "July 16,2020");
-let bike = new Item("fix bicycle","ASAP") 
-console.log(groceries,bike);
+let bike = new Item("fix bicycle","July 15, 2020") 
+let mop = new Item("mop all the hard floors", "July 18, 2020")
+console.log(groceries,bike,mop);
 
-// 12b:
+/* 12b: Write a function that takes in an array of custom Item objects created in part A, 
+iterates through the array, and returns a formatted string containing an html element 
+of an unordered list where each list item contains the information stored in 
+a single Item object from the input array. The output should be valid HTML. */
+
 let toDo = [groceries,bike];
 console.log(toDo);
 
@@ -257,7 +262,7 @@ function toDoHTML(array) {
     let list = document.createElement("ul")
     for (let i=0;i<array.length;i++) {
         let listItem = document.createElement("li");
-        listItem.innerHTML = `${arr[i].task}: ${arr[i].deadline} `;
+        listItem.innerHTML = `${array[i].task}: ${array[i].deadline} `;
         list.appendChild(listItem)
     }
     return list;
@@ -265,7 +270,11 @@ function toDoHTML(array) {
 
 let list = toDoHTML(toDo)
 
-// 12c:
-document.getElementsByTagName("body").appendChild(list)
+/* 12c: Test your functions by creating a list of three or so Item objects 
+(using the function from part A), then taking the HTML produced from part B 
+and adding it to the HTML in your document. 
+Consider using the methods createElement and appendChild in your approach.*/
+
+document.getElementsByTagName("body")[0].appendChild(list);
 
 
