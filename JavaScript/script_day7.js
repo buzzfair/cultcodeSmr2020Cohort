@@ -138,3 +138,4 @@ console.log(body)
 // for(let j = 0; j < paragraphs.length; j++) {
 //     paragraphs[j].style.backgroundColor = colors[j];
 // }
+
