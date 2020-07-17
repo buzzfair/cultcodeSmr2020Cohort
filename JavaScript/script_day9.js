@@ -69,16 +69,10 @@ let buttons = document.querySelectorAll("button")
 // one for each different button
 //store variables in a way that they're for each button
 // David recommends using a Map like so >>>>>
-
-
 // let clickTracker = new Map();
-
 // let firstButton = buttons[0];
-
 // clickTracker.set(firstButton,0)
-
 // let numClicksFirstButton = clickTracker.get(firstButton);
-
 // console.log(numClicksFirstButton);
 
 
