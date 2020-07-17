@@ -86,7 +86,7 @@ for (let i=0;i<3;i++) {
     var p = document.createElement("p");
     p.id = "p"+i;
     document.body.appendChild(p)
-    p.innerHTML = "You have clicked Button" + (i+1) + " 0 times";
+    p.innerHTML = "You've clicked Button" + (i+1) + " 0 times";
     p.style.fontFamily = "Helvetica"
     p.style.color = "purple";
     p.style.fontWeight = "800";
@@ -97,7 +97,7 @@ for (let i=0;i<1;i++) {
     var button1 = document.getElementById("b1")
     button1.addEventListener("click", function click(event) {
     clicks1++;
-    p0.innerHTML = `You clicked ${event.target.innerHTML} this number of times ${clicks1}`;
+    p0.innerHTML = `You've clicked ${event.target.innerHTML} ${clicks1} times `;
 })
 }
 
@@ -106,7 +106,7 @@ for (let i=0;i<1;i++) {
     var button2 = document.getElementById("b2")
     button2.addEventListener("click", function click(event) {
     clicks2++;
-    p1.innerHTML = `You clicked ${event.target.innerHTML} this number of times ${clicks2}`;
+    p1.innerHTML = `You've clicked ${event.target.innerHTML} ${clicks2} times `;
 })
 }
 
@@ -115,7 +115,7 @@ for (let i=0;i<1;i++) {
     var button3 = document.getElementById("b3")
     button3.addEventListener("click", function click(event) {
     clicks3++;
-    p2.innerHTML = `You clicked ${event.target.innerHTML} this number of times ${clicks3}`;
+    p2.innerHTML = `You've clicked ${event.target.innerHTML} ${clicks3} times `;
 })
 }
 
