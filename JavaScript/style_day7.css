@@ -1,0 +1,29 @@
+/* style reset */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	border: 0;
+	line-height: 1rem;
+	font-size: 1rem;
+}
+
+/* end -- style reset */
+
+body {
+	background-color: lavender;
+	text-align: center;
+}
+
+button {
+	padding: 10px;
+	margin-top: 150px;
+	border: 3px solid palevioletred;
+	background-color: lightgoldenrodyellow;
+	border-radius: 10px;
+}
+
+button:active {
+	background-color: lightsalmon;
+	transform: translateY(2px);
+}
