@@ -1,0 +1,173 @@
+/* style reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1rem;
+}
+
+/* end -- style reset */
+
+body {
+    background-color:  #010165;
+    color: turquoise;
+}
+
+.main-container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 90vh;
+}
+
+.host-container {
+    width: fit-content;
+    padding-left: 1em;
+    padding-right: .5em;
+}
+
+.host-container img {
+    max-width:90%;
+    display:block;
+    height:auto;
+}
+
+.game-container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-title {
+    margin-top: 1em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1em;
+    padding-bottom: 1em;
+}
+
+
+.instructions-number,
+.instructions-text
+ {
+
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    padding: .5em .5em;
+
+}
+
+.luck {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.responses {
+    font-size: 1.25em;
+    font-family: 'Roboto', sans-serif;
+    color: orange;
+    margin-top: .5em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.game{
+
+    margin-top: 0;
+    text-align: center;
+}
+
+input {
+    height: 50px;
+    width: 75px;
+    text-align: center;
+}
+
+label {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    padding: .5em 1em;
+}
+
+button {
+	padding: 15px;
+	margin-top: 10px;
+	border: 3px solid aqua;
+	background-color: #dbb82c;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button:active {
+	background-color: #f7eda0;
+	transform: translateY(2px);
+}
+
+
+@media only screen and (max-width: 720px) {
+    .main-title,
+    .subtitle {
+        font-size: 1.5em;
+ 
+    }
+    
+    .luck {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 10px;
+
+    }
+
+    input {
+        height: 40px;
+        width: 60px;
+    }
+
+    label {
+        padding: .5em;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 380px) {
+    .main-title,
+    .subtitle {
+        font-size: 1.25em;
+ 
+    }
+    
+    .luck {
+        font-size: .75em;
+    }
+
+    button {
+        padding: 5px;
+
+    }
+
+    input {
+        height: 35px;
+        width: 55px;
+    }
+
+    label {
+        padding: .5em;
+    }
+
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');

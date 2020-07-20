@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cultivating Coders Bootcamp Summer 2020 Week 5">
+    <meta name="keywords" content="project,coding challenge,exercise,html,css,JavaScript,game">
+
+    <title>
+        Cultivating Coders JavaScript Day 10: Guessing Game
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+<body>
+    <div class="main-container">
+        <div class="host-container">
+            <img class="host"
+                src="images/gary-grins_blue.jpg"
+                alt="Your Host for Guessing Game, Gary Grins!">
+        </div>
+        <div class="game-container">
+            <div class="title">
+                <h1 class="main-title">Welcome to Guessing Game</h1>
+            </div>
+            <div class="subtitle">
+                <h2 class="instructions-title">How to Play: Instructions</h2>
+            </div>
+            <table class="instructions-table">
+                <tr>
+                    <td class="instructions-number">1</td>
+                    <td class="instructions-text">Enter a number between 1 and 100 below and Click "Guess"</td>
+                </tr>
+                <tr>
+                    <td class="instructions-number">2</td>
+                    <td class="instructions-text">If you enter the right number, you win!</td>
+                </tr>
+                <tr>
+                    <td class="instructions-number">3</td>
+                    <td class="instructions-text">You can keep guessing until you get the right number!</td>
+                </tr>
+            </table>
+            <div id="luck" class="luck">Good luck!</div>
+            <div class="game">
+                <label for="userguess">Enter Your Guess & Click the Button</label>
+                <input type="number" id="userguess"></input>
+                <button type="button" id="start">Guess</button>
+            </div>
+            <div id="responses" class="responses">
+                
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="script.js"  type="text/JavaScript"></script>
+</body>
+
+</html>
