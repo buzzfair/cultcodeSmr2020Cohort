@@ -1,0 +1,24 @@
+Exercises for NodeJS -
+- Use the Dog API to retrieve a random image of a dog and add it to the document. 
+- Give this image a CSS class to make it 200px by 200px with a border-radius of 10px.
+- Now, use the Dog API to retrieve five random dog images and add them to the document. Hint: use a loop!
+
+Note that when making an API call, you'll need to figure out the following things:
+- where am I making the API to? That is, what URL am I using in the request (called an endpoint)?
+- how can I access the data I want? What format does it come in, and where in the response is it stored?
+
+Lastly-
+-Using the Dog API, create a slideshow that has two buttons-
+one for breeds and one for sub breeds. You'll need to use the && statement that
+we introduced in class yesterday for this for when you're making your API call to 
+retrieve both breeds and sub breeds.
+
+Documentation for this assignment is found here and will contain the links for your API calls. 
+
+https://dog.ceo/dog-api/documentation/
+Dog API
+Dog CEO's Dog API Documentation. Over 20,000 images of dogs programmaticaly accessible by over 120 breeds. 
+Image supplied by the Stanford Dogs Dataset.
+
+﻿    Object.keys(item).forEach(function(key) {
+        result.push(item[key]);
