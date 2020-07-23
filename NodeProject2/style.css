@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --margin-card: 6px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: azure;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 98vw;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 20%;
+    margin: 25px;
+    padding: 20px;
+    border: 1px solid rgba(15,15,15,0.2);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.title {
+    font-size: 24px;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+}
+
+.director {
+    font-size: 14px;
+    color: black;
+    margin-top: var(--margin-card);
+}
+
+.button {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid rgba(15,15,15,0.2);
+    border-radius: 8px;
+    background-color: rgb(102, 86, 248);
+    color: rgb(187, 255, 0);
+    cursor: pointer; /* UI tool to make the cursor change and provide visual cue to site user that the element is clickable*/
+
+}
+
+.description {
+    margin-top: var(--margin-card);
+    font-size: 12px;
+    text-align: justify;
+}
+
+
+@media only screen and (max-width: 780px) {
+    .title {
+     font-size: 18px;
+    }
+
+    .director {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 5px;
+    }
+  }
