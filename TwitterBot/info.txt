@@ -1,0 +1,18 @@
+API Key 
+qzIKBvfFyHX8ognUToIT5yGOu
+
+API Secret Key 
+6r4Us6iqkVIT03nwpExV6btpf5UdtHgkZReXcarEUCrVyRPMMi
+
+Access token 
+1198724259863920640-yiu0z3jlZTarymq2KJY0AYxUhn8k7f
+
+Access token secret 
+pHRNv6ZMXPWDyrokSRaa7pHw17w4QvCMJhtRydQLUWkOC
+
+Bearer Token 
+AAAAAAAAAAAAAAAAAAAAAA0HGQEAAAAAGAQTvQIUlmJUid7xy0lwDUOJ3e4%3D2wcJxA2m2sgPrBgny5u3Jpth6odRrCSvHuaFhuANMMKQREL6DT
+
+
+how to test, run this in some terminal (neither powershell nor gitbash worked for me)
+curl -X GET -H "Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAA0HGQEAAAAAGAQTvQIUlmJUid7xy0lwDUOJ3e4%3D2wcJxA2m2sgPrBgny5u3Jpth6odRrCSvHuaFhuANMMKQREL6DT" "https://api.twitter.com/labs/1/tweets?ids=440322224407314432&expansions=author_id,attachments.media_keys"
