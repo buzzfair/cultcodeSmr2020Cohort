@@ -1,0 +1,42 @@
+/* in SASS, you can make single-line comments unlike CSS
+     SASS files are NOT CSS but do use CSS within them
+
+     SASS is a CSS pre-processor
+so it must be translated into CSS
+for it to be parsed and processed
+
+SASS extends the functionality of CSS
+ALL CSS code is valid inside a SASS file
+but not all SASS code is valid inside CSS
+
+First it must be translated into CSS for
+the browser to understand it
+
+SASS is good for bigger projects and 
+it requires good code architecture
+
+In main.scss we import all the partial files
+there shouldn't actually be any CSS in this file
+only imports using @import
+
+Sass lets you nest selectors using &
+
+/*  7-1 design principle:
+    abstracts / is for variables & other mixins that don't output CSS
+    base / is for basic project definitions like CSS resets, etc.
+    componenents / is for components like buttons, dropdowns, image carousels, et al
+    layout / is for layouts that are repeated across multiple pages
+    pages / is for info for the specific pages
+    themes / is for thematic code
+    vendors / is for all 3rd party CSS / code you didn't personally write
+*/
+
+@import "base/reset";
+
+@import "abstracts/mixins";
+
+@import "layout/header";
+
+@import "layout/body";
+
+@import "layout/footer";

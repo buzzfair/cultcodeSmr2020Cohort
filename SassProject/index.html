@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Sass Project
+    </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cultivating Coders Bootcamp Summer 2020 ">
+    <meta name="keywords" content="coding challenge,html,css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- top navigation bar -->
+    <header class="header">
+        <img class="header__logo" alt="Bob's Burgers Logo" src="media/images/bbredtransparent.png">
+        <a class="header__navlink" href="#">Menu</a>
+        <a class="header__navlink" href="#">About Us</a>
+        <a class="header__navlink" href="#">Order on DoorDash</a>
+        <div class="location">
+            <a class="header__navlink--search" href="#">Find a Location</a>
+            <span class="header__navlink--search--icon material-icons">search</span>
+        </div>
+    </header>
+    <!-- image carousel section -->
+    <div class = "top-body">
+    <span class="material-icons md-36 image-carousel-nav prev">arrow_back_ios</span>
+    <div class="image-carousel">
+        <div class="current-slide slide">
+            <img class="image-carousel__images slide1" alt="yummy burger" src="media/images/burger - header images.png">
+        </div>
+        <div class="slide">
+            <img class="image-carousel__images slide2" alt="yummy burger 2" src="media/images/hamb2.jpg">
+        </div>
+        <div class="slide">
+            <img class="image-carousel__images slide3" alt="yummy burger 3" src="media/images/hamb3.jpg">
+        </div>
+        <div class="slide">
+            <img class="image-carousel__images slide4" alt="yummy burger 4" src="media/images/hamb4.jpg">
+        </div>
+        <div class="slide">
+            <img class="image-carousel__images slide5" alt="yummy burger 5" src="media/images/hamb5.jpg">
+        </div>
+        <div class="slide">
+            <img class="image-carousel__images slide6" alt="yummy burger 6" src="media/images/hamb6.jpg">
+        </div>
+    </div>
+    <span class="material-icons md-36 image-carousel-nav next">arrow_forward_ios</span>
+</div>
+    <div class="image-carousel__subtitle-container">
+        <h3 class="image-carousel__subtitle-container-text">Home of the Ranchero Burger</h3>
+    </div>
+    <!-- meal combos section -->
+    <div class="combos">
+        <h1 class="combos-title">Combos</h1>
+        <div class="combos-container">
+            <div class="combos__card">
+                <img class="combos__card--image" src="media/images/Combo A img.png" alt="Combo A">
+                <h2 class="combos__card--title">Combo A</h2>
+                <p class="combos__card--description">Ranchero Supreme Burger.
+                    Fries. Drink.</p>
+                <span class="combos__card--price">$6.25</span>
+                <span class="combos__card--price_separator"> | </span>
+                <span class="combos__card--calories">650 calories</span>
+            </div>
+            <div class="combos__card">
+                <img class="combos__card--image" src="media/images/Combo B img.png" alt="Combo B">
+                <h2 class="combos__card--title">Combo B</h2>
+                <p class="combos__card--description">Old Fashioned Burger.
+                    Fries. Drink.</p>
+                <span class="combos__card--price">$5.85</span>
+                <span class="combos__card--price_separator"> | </span>
+                <span class="combos__card--calories">650 calories</span>
+            </div>
+            <div class="combos__card">
+                <img class="combos__card--image" src="media/images/Combo C img.png" alt="Combo C">
+                <h2 class="combos__card--title">Combo C</h2>
+                <p class="combos__card--description">Foot Long Chile Cheese Dog.
+                    Fries. Drink.</p>
+                <span class="combos__card--price">$6.05</span>
+                <span class="combos__card--price_separator"> | </span>
+                <span class="combos__card--calories">650 calories</span>
+            </div>
+            <div class="combos__card">
+                <img class="combos__card--image" src="media/images/Combo D img.png" alt="Combo D">
+                <h2 class="combos__card--title">Combo D</h2>
+                <p class="combos__card--description">2 Taco Burgers.
+                    Fries. Drink.</p>
+                <span class="combos__card--price">$6.20</span>
+                <span class="combos__card--price_separator"> | </span>
+                <span class="combos__card--calories">650 calories</span>
+            </div>
+            <div class="combos__card">
+                <img class="combos__card--image" src="media/images/Combo E img.png" alt="Combo E">
+                <h2 class="combos__card--title">Combo E</h2>
+                <p class="combos__card--description">2 Tortilla Burgers.
+                    Fries. Drink.</p>
+                <span class="combos__card--price">$6.35</span>
+                <span class="combos__card--price_separator"> | </span>
+                <span class="combos__card--calories">650 calories</span>
+            </div>
+            <div class="combos__card">
+                <img class="combos__card--image" src="media/images/Combo F img.png" alt="Combo F">
+                <h2 class="combos__card--title">Combo F</h2>
+                <p class="combos__card--description">Chicken Nuggets.
+                    Fries. Drink.</p>
+                <span class="combos__card--price">4 ct. $4.20</span>
+                <span class="combos__card--price_separator"> | </span>
+                <span class="combos__card--calories">650 calories</span></br>
+                <span class="combos__card--price">6 ct. $4.65</span>
+                <span class="combos__card--price_separator"> | </span>
+                <span class="combos__card--calories">650 calories</span>
+            </div>
+        </div>
+    </div>
+    <!-- bottom info bar -->
+    <footer class="footer">
+        <img class="footer__logo" alt="Bob's Burgers Logo" src="media/images/bbredtransparent.png">
+        <div class="hours">
+            <span class="footer__detail_hours">Operations Hours</span><br>
+            <span class="footer__detail_hours">Monday-Friday 8:30 AM - 9PM</span><br>
+            <span class="footer__detail_hours">Saturday 10:30 AM - 9PM</span><br>
+            <span class="footer__detail_hours">Sunday 10:30 AM - 8:30PM</span>
+        </div>
+        <p class="footer__detail_copyright">2020 Bob's Burgers, All Rights Reserved</p>
+        <div class="contact">
+            <a class="footer__detail_contact" href="#">Contact Us</a>
+            <a class="footer__detail_contact" href="#">Legal</a>
+            <a class="footer__detail_contact" href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+
+    <script src="script.js" rel="script" type="text/javascript"></script>
+</body>
+
+</html>
